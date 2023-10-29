@@ -28,4 +28,18 @@ while (countdown > 0){
 }
 
 console.log("Game over")
+
+
+// Trying to figure out how to change the color of the squares?
+
+var colors =["blue", "purple", "green", "red", "rgb(250, 175, 72)"];
+
+var square =document.querySelectorAll(".square");
+ 
+Array.prototype.forEach.call(square, function(square) {
+  square.addEventListener("click", function() {
+    var colorNum = Math.floor(Math.random() * colors.length);
+    square.style['background-color'] = colors[colorNum];
+  });
+});
    
