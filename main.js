@@ -8,4 +8,4 @@ while (countdown > 0){
 }
 
 console.log("Game over")
-   
+    
