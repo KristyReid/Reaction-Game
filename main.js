@@ -45,7 +45,7 @@ function activate() {
 // console timer - v2
 
 function startCountdown(seconds) {
-    let counter = seconds;
+    let counter = 30;
   
     const interval = setInterval(() => {
       console.log(counter);
@@ -68,6 +68,7 @@ function runGame (){
 
 //Programm to run here:
 goPlay.addEventListener("click", function(){
+    startCountdown(30);
     activate();
     console.log('Game started');
     });
